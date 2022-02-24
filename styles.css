@@ -3,6 +3,11 @@ body {
   background-color: #1C0A00;
 }
 
+footer {
+  text-align: center;
+  color: #d4d4d4;
+}
+
 h1 {
   font-size: 5rem;
   color: #DBEDF3;
@@ -77,4 +82,12 @@ h1 {
   text-align: center;
   margin: 10px;
   background-color: white;
+}
+
+.github {
+  padding: 10px 10%;
+}
+
+.ghub {
+  color: #d4d4d4;
 }
