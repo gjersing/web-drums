@@ -8,9 +8,13 @@ function findDrum(key) {
 }
 
 function playDrum(key) {
-  var drumKey = "." + key;
-  var downDrum = document.querySelector(drumKey);
+
+  //query for played drum button
+  var downDrum = document.querySelector("." + key);
+
+  //Generate random text color and animate button
   downDrum.style.color = "#" + Math.floor(Math.random()*16777215).toString(16);
+  downDrum.classList.add("pressed");
 
   switch (key) {
     case 'w':
@@ -43,6 +47,7 @@ function playDrum(key) {
       break;
     default:
   }
+  setTimeout(function() {downDrum.classList.remove("pressed");}, 100);
 }
 
 //Attach click listeners to drums
